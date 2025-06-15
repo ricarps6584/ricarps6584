@@ -1,0 +1,152 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: auto;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    thead {
+      background-color: black;
+      color: white;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .grupo {
+      font-weight: bold;
+      background-color: #e6e6e6;
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    .total-highlight {
+      background-color: #dcdcdc;
+      font-weight: bold;
+    }
+    
+menu {
+  display: flex;
+  flex-direction: column;
+align-items:center;
+  padding: 40px;
+  font-size: 20px;
+}
+    .menu{
+      background-color: #333;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      
+  }
+  
+  
+  .menu li{
+      position: relative;
+  }
+  .menu > li{
+      padding: 15px 20px;
+  }
+  .menu a {
+      color: white;
+      text-decoration: none;
+      display: block;
+  }
+  .menu > li:hover{
+      background-color: #333;
+  }
+  /*SUBMENU*/
+  .submenu{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgb(235, 180, 28);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+  }
+  .submenu li{
+      padding: 10px;
+  }
+  .submenu a {
+      color: white;
+  
+  }
+  /*MOSTRAR SUBMENU AL PASAR EL MOUESE*/
+  .menu li:hover .submenu{
+      display: block;
+  }
+      
+   nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+      }
+  
+      nav ul li {
+        display: inline;
+      }
+  
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+  
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+  .logo-container {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #ffffff;
+      }
+  
+      .logo-container img {
+          width: 300px;
+        height: auto;
+        text-align: center;
+        /* ajusta tamaño si necesitas */
+      }
+      
+      button {
+        background-color: #363636;
+        color: #fff;
+        padding:  4px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 22px;
+        transition: background-color 0.3s ease-in-out; /* Efecto de transición */
+    display: grid;
+    align-self: start;
+      }
+      
+      button:hover {
+        background-color: #424242;
+      }
+      
+      button:active {
+        background-color: #424242;
+        transform: scale(0.9);
+      }
+      
